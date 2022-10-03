@@ -87,99 +87,7 @@ list-style: none;
 .text_block li {
     padding-bottom: 5px;
 }
-.drop_button {
-    background-color: aquamarine;
-    color: white;
-    padding: 16px;
-    border: none;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown_content {
-    display: none;
-    position: absolute;
-    
-    z-index: 1;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-    text-align: center;
-}
-.dropdown_content a {
-    color: aquamarine;
-    text-decoration: underline;
-    display: block;
-    border-radius: 10px;
-   
-}
-.dropdown:hover .dropdown_content {
-    display: block;
-}
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Навигационные ссылки */
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Подменю навигации */
-  .subnav {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Кнопка Subnav */
-  .subnav .subnavbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  /* Добавить красный цвет фона для навигационных ссылок при наведении */
-  .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: red;
-  }
-  
-  /* Стиль содержимого subnav - позиционированный абсолютно */
-  .subnav-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: red;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  /* Стиль ссылок subnav */
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Добавить серый цвет фона при наведении курсора */
-  .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-  
-  /* При наведении указателя мыши на контейнер subnav откройте содержимое subnav */
-  .subnav hover .subnav-content {
-    display: block;
-  }
+
   .test ul {
     border-bottom: 1px solid #000;
     list-style: none;
@@ -207,4 +115,27 @@ list-style: none;
   }
   .test li:hover ul {
     display: block;
+  }
+  @media screen and (max-width: 1366px) {
+    div {margin-left: 25%;
+      margin-right: 25%;
+      background-color: #ee82ee;
+    }
+   }
+   @media screen and (max-width: 1280px) {
+    div {margin-left: 0%;
+      margin-right: 0%;
+      background-color: #999999;
+    }
+   }
+   @media screen and (max-width: 640px) {
+    div {
+      margin-left: 0%;
+      margin-right: 0%;
+      background-color: #000;
+    }
+   .text_block {
+      margin-left: 0%;
+      margin-right: 0%;
+   } 
   }
