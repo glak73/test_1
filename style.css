@@ -186,6 +186,7 @@ list-style: none;
     margin: 0;
     padding: 0;
     width: 100px;
+    display: block;
   }
   .test ul li {
     position: relative;
@@ -193,7 +194,7 @@ list-style: none;
   .test ul li a {
     display: block;
     border: 1px solid rgb(16, 177, 189);
-    background-color: burlywood;
+    background-color: aquamarine;
     border-bottom: 1px;
     padding: 5px;
     text-decoration: none;
