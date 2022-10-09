@@ -94,7 +94,7 @@ list-style: none;
     margin: 0;
     padding: 0;
     width: 100px;
-    display: block;
+    display: flex;
   }
   .test ul li {
     position: relative;
@@ -116,26 +116,77 @@ list-style: none;
   .test li:hover ul {
     display: block;
   }
-  @media screen and (max-width: 1366px) {
-    div {margin-left: 25%;
-      margin-right: 25%;
-      background-color: #ee82ee;
-    }
-   }
+  .header {
+    display: flex;
+    
+    background-color: azure;
+    
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 15px;
+
+  }
+  .header img {
+    width: 85px;
+    border-radius: 10px;
+    
+    align-self: flex-start;
+  }
+  .header li {
+    
+    display: flex;
+    list-style: none;
+    border-radius: 10px;
+    
+    font-style: bold;
+    
+  }
+  .header div {
+    border-radius: 10px;
+    float: right;
+  }
+  .header div div {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    padding-top: 10%;
+  }
+  .header div div :hover{
+    background-color: rgb(150, 136, 10);
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+  }
+  .header ul {
+    list-style: none;
+    display: inline;
+  }
+  .header a {
+    font-size: large;
+  }
    @media screen and (max-width: 1280px) {
     div {margin-left: 0%;
       margin-right: 0%;
-      background-color: #999999;
+      text-decoration: underline;
+    }
+    .header a {
+      font-size: medium;
     }
    }
    @media screen and (max-width: 640px) {
     div {
       margin-left: 0%;
       margin-right: 0%;
-      background-color: #000;
+      font-size: medium;
+      text-decoration: none;
     }
    .text_block {
       margin-left: 0%;
       margin-right: 0%;
+      font-size: small;
+
    } 
+   .header a {
+    font-size: small;
+  }
   }
