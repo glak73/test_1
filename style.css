@@ -143,19 +143,15 @@ list-style: none;
   }
   .header div {
     border-radius: 10px;
-    float: right;
-  }
-  .header div div {
+    
     width: 75px;
     height: 75px;
-    text-align: center;
-    padding-top: 10%;
   }
-  .header div div :hover{
-    background-color: rgb(150, 136, 10);
-    width: 75px;
-    height: 75px;
-    border-radius: 10px;
+  
+  .header div :hover{
+    background: rgb(150, 136, 10);
+    border-radius: 5px;
+    justify-content: center;
   }
   .header ul {
     list-style: none;
@@ -164,6 +160,7 @@ list-style: none;
   .header a {
     font-size: large;
   }
+  
    @media screen and (max-width: 1280px) {
     div {margin-left: 0%;
       margin-right: 0%;
@@ -173,6 +170,7 @@ list-style: none;
       font-size: medium;
     }
    }
+
    @media screen and (max-width: 640px) {
     div {
       margin-left: 0%;
