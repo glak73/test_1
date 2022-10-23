@@ -3,10 +3,17 @@ a {
     text-decoration: none;
 padding: 2px 1px 0;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.adapt_font {
+  font-size: large;
+}
 .flex_class {
     display: flex;
     border-radius: 10px;
-    background-color: aqua;
+    background-color: rgb(3, 133, 133);
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
     font-style: bold;
@@ -19,7 +26,7 @@ padding: 2px 1px 0;
 div {
     border-radius: 10px;
 }
-body {background-color: #ee82ee;}
+body {background-color: #b9aeb9;}
 .Main_text_class {
     
     text-align: center;
@@ -65,7 +72,7 @@ box-shadow: 0 0 10px rgba(0,0,0,0.5);
 margin-left: 25%;
 margin-right: 25%;
 margin-top: 35px;
-background-color: aquamarine;
+background-color: rgb(214, 152, 37);
 
 }
 .text_block  h2{
@@ -164,7 +171,17 @@ list-style: none;
   .header a {
     font-size: large;
   }
-   @media screen and (max-width: 1280px) {
+  .contact_page {
+    background-color: rgb(3, 133, 133);
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+  }
+   @media screen and (min-width: 1001px) and (max-width: 1080px){
+    .container {
+      width: 1920px;
+    }
+    
     div {margin-left: 0%;
       margin-right: 0%;
       text-decoration: underline;
@@ -172,13 +189,42 @@ list-style: none;
     .header a {
       font-size: medium;
     }
+    .adapt_font {
+      font-size: x-large;
    }
-   @media screen and (max-width: 640px) {
+  }
+   @media screen and (min-width: 551px) and (max-width: 1000px){
+    .container {
+      width: 1138px;
+      
+    }
+    .adapt_font {
+      font-size: large;
+    }
     div {
       margin-left: 0%;
       margin-right: 0%;
-      font-size: medium;
+      
       text-decoration: none;
+    }
+  }
+    @media screen and (min-width: 320px) and  (max-width: 550px){
+      .container {
+        width: 576px;
+      }
+      header {
+        margin-left: 0%;
+        margin-right: 0%;
+      
+      }
+      img{ 
+        width: 25px;
+      }
+      div {
+        margin-left: 0%;
+        margin-right: 0%;
+        text-decoration: none;
+      }
     }
    .text_block {
       margin-left: 0%;
@@ -190,3 +236,4 @@ list-style: none;
     font-size: small;
   }
   }
+  
