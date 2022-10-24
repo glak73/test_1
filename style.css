@@ -194,17 +194,6 @@ list-style: none;
     .adapt_font {
       font-size: x-large;
    }
-<<<<<<< HEAD
-  }
-   @media screen and (min-width: 551px) and (max-width: 1000px){
-    .container {
-      width: 1138px;
-      
-    }
-    .adapt_font {
-      font-size: large;
-    }
-=======
 
    @media screen and (max-width: 640px) {
 >>>>>>> 87d5bcd49e4e7998f95a58ff94a804422af7bafd
