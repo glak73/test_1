@@ -156,7 +156,7 @@ body {
 }
 
 .header img {
-  width: 85px;
+  width: 75px;
   border-radius: 10px;
 
   align-self: flex-start;
@@ -164,10 +164,10 @@ body {
 
 .header li {
 
-  display: flex;
+  display: inline;
   list-style: none;
   border-radius: 10px;
-
+  
   font-style: bold;
 
 }
@@ -251,4 +251,13 @@ body {
   .header a {
     font-size: small;
   }
+}
+.topmenu_div {
+  display: inline;
+}
+.topmenu_div ul {
+  display: inline;
+}
+.topmenu_div ul li{
+  display: inline;
 }
